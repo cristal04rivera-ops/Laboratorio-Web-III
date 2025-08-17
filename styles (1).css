@@ -110,4 +110,8 @@ button:hover {
         display: block;
         margin: 10px 0;
     }
+    nav ul li {
+        display: block;
+        margin: 10px 0;         /* Espaciado entre links */
+    }
 }
