@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>TechStore — Productos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+  <div class="container">
+    <a href="index.html" class="brand">TechStore</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="acerca.html">Acerca de</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#" id="toggle-cart" aria-label="Carrito">Carrito (<span id="contador-carrito">0</span>)</a>
+    </nav>
+  </div>
+</header>
+  <!-- HEADER + CARRITO -->
+   <!-- Mini-modal del carrito (presente en todas las páginas) -->
+<div id="cart-modal" class="cart-modal" aria-live="polite">
+  <h3 style="margin:6px 0 10px;">Tu carrito</h3>
+  <div id="cart-body"></div>
+  <div class="cart-total">Total: <span id="cart-total">L 0</span></div>
+  <div class="cart-actions">
+    <button class="btn" id="btn-vaciar" type="button">Vaciar</button>
+    <button class="btn" id="btn-pagar" type="button">Pagar</button>
+  </div>
+</div>
+
+
+
+  <main class="container">
+    <section class="hero">
+      <h2>Productos y Componentes</h2>
+      <p>Venta minorista y <strong>mayorista</strong> para negocios y ensambladores.</p>
+      <div class="filtros" role="search">
+        <input id="buscador" type="search" placeholder="Buscar: SSD, Ryzen, RTX..." aria-label="Buscar productos">
+        <select aria-label="Categoría">
+          <option value="">Todas las categorías</option>
+          <option>Computadoras</option>
+          <option>Procesadores</option>
+          <option>Tarjetas gráficas</option>
+          <option>Almacenamiento</option>
+          <option>Memorias RAM</option>
+          <option>Fuentes / Cases</option>
+          <option>Periféricos</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Render dinámico -->
+    <section id="productos-lista" class="grid grid--3" style="margin-top:20px;"></section>
+
+    <section class="cta" style="margin-top:20px;">
+      <h3>¿Necesitas cotización por volumen?</h3>
+      <p>Envíanos tu lista y te damos <strong>precios mayoristas</strong> y tiempos de entrega.</p>
+      <a class="btn" href="contacto.html">Solicitar cotización</a>
+    </section>
+  </main>
+
+  <!-- FOOTER + SCRIPTS -->
+<div id="cart-modal" class="cart-modal" aria-live="polite">
+  ...
+</div>
+ <footer>
+        <p>&copy;  2025 TechStore — SPS, Barrio Los Andes</p>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>TechStore — Acerca de</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container">
+   <a href="index.html" class="brand">TechStore</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="acerca.html">Acerca de</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#" id="toggle-cart" aria-label="Carrito">Carrito (<span id="contador-carrito">0</span>)</a>
+    </nav>
+  </div>
+</header>
+  <!-- HEADER + CARRITO -->
+   <!-- Mini-modal del carrito (presente en todas las páginas) -->
+<div id="cart-modal" class="cart-modal" aria-live="polite">
+  <h3 style="margin:6px 0 10px;">Tu carrito</h3>
+  <div id="cart-body"></div>
+  <div class="cart-total">Total: <span id="cart-total">L 0</span></div>
+  <div class="cart-actions">
+    <button class="btn" id="btn-vaciar" type="button">Vaciar</button>
+    <button class="btn" id="btn-pagar" type="button">Pagar</button>
+  </div>
+</div>
+
+  <!-- HEADER + CARRITO -->
+
+  <main class="container">
+    <section class="hero">
+      <h2>¿Quiénes somos?</h2>
+      <p>
+        Somos una empresa dedicada a la venta de <strong>computadoras, componentes y periféricos</strong>.
+        Ubicados en <strong>San Pedro Sula, barrio Los Andes</strong>.
+      </p>
+      <p><strong>Distribuimos</strong> a nivel nacional e internacional con opciones de <strong>mayoreo</strong>.</p>
+    </section>
+
+    <section class="grid grid--2" style="margin-top:20px;">
+      <article class="card">
+        <h3>Misión</h3>
+        <p>Proveer soluciones tecnológicas confiables, asesoría experta y soporte oportuno.</p>
+      </article>
+      <article class="card">
+        <h3>Visión</h3>
+        <p>Ser la tienda líder de computación en Honduras y referente regional en distribución.</p>
+      </article>
+    </section>
+
+    <section style="margin-top:20px;">
+      <h3>¿Qué nos diferencia?</h3>
+      <ul class="features">
+        <li>Inventario actualizado: CPUs, motherboards, RAM, SSD, GPUs y más.</li>
+        <li>Precios mayoristas y programas para revendedores.</li>
+        <li>Asesoría para armado de PC de oficina, gaming y workstations.</li>
+        <li>Logística de envíos nacionales e internacionales.</li>
+        <li>Garantías claras y soporte postventa.</li>
+      </ul>
+    </section>
+
+    <section class="cta" style="margin-top:20px;">
+      <h3>¿Eres mayorista o ensamblador?</h3>
+      <p>Activa tu cuenta y accede a <strong>listas de precio por volumen</strong>.</p>
+      <a class="btn" href="contacto.html">Contactar ventas</a>
+    </section>
+  </main>
+
+  <!-- FOOTER + SCRIPTS -->
+   <div id="cart-modal" class="cart-modal" aria-live="polite">
+  ...
+</div>
+ <footer>
+        <p>&copy; 2025 TechStore — SPS, Barrio Los Andes</p>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>

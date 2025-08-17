@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>TechStore — Contacto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container">
+   <a href="index.html" class="brand">TechStore</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="acerca.html">Acerca de</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#" id="toggle-cart" aria-label="Carrito">Carrito (<span id="contador-carrito">0</span>)</a>
+    </nav>
+  </div>
+</header>
+  <!-- HEADER + CARRITO -->
+   <!-- Mini-modal del carrito (presente en todas las páginas) -->
+<div id="cart-modal" class="cart-modal" aria-live="polite">
+  <h3 style="margin:6px 0 10px;">Tu carrito</h3>
+  <div id="cart-body"></div>
+  <div class="cart-total">Total: <span id="cart-total">L 0</span></div>
+  <div class="cart-actions">
+    <button class="btn" id="btn-vaciar" type="button">Vaciar</button>
+    <button class="btn" id="btn-pagar" type="button">Pagar</button>
+  </div>
+</div>
+
+
+  <main class="container">
+    <section class="hero">
+      <h2>Contacto</h2>
+      <p>Estamos para ayudarte. Escríbenos y te responderemos lo antes posible.</p>
+    </section>
+
+    <section class="grid grid--2" style="margin-top:20px;">
+      <article class="card">
+        <h3>Formulario de contacto</h3>
+        <form id="contact-form" action="#" method="post" novalidate>
+          <label for="nombre">Nombre*</label>
+          <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre completo">
+
+          <label for="email">Correo electrónico*</label>
+          <input id="email" name="email" type="email" required placeholder="tu@email.com">
+
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel" placeholder="+504 ....">
+
+          <label for="asunto">Asunto*</label>
+          <input id="asunto" name="asunto" type="text" required placeholder="Cotización, Soporte, Mayoristas...">
+
+          <label for="mensaje">Mensaje*</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Cuéntanos qué necesitas..."></textarea>
+
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+      </article>
+
+      <article class="card">
+        <h3>Ubicación y horarios</h3>
+        <p>
+          <strong>Dirección:</strong> San Pedro Sula, barrio Los Andes, Honduras<br>
+          <strong>Horario:</strong> Lun–Sáb: 9:00 am – 6:00 pm
+        </p>
+        <p><strong>Ventas al por mayor:</strong> Solicita tu lista de precios y tiempos de entrega.</p>
+
+        <h4>Mapa</h4>
+        <div class="mapa">
+          <iframe title="Mapa SPS Barrio Los Andes"
+                  src="https://www.google.com/maps?q=Barrio+Los+Andes,+San+Pedro+Sula&output=embed"
+                  width="100%" height="260" loading="lazy"></iframe>
+        </div>
+
+        <h4>Contacto directo</h4>
+        <ul class="contacto-lista">
+          <li><strong>Tel:</strong> +504 0000-0000</li>
+          <li><strong>WhatsApp:</strong> +504 0000-0000</li>
+          <li><strong>Email:</strong> ventas@techstore.hn</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER + SCRIPTS -->
+<div id="cart-modal" class="cart-modal" aria-live="polite">
+  ...
+</div>
+ <footer>
+        <p>&copy; 2025 TechStore — SPS, Barrio Los Andes</p>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>

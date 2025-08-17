@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>TechStore — Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container">
+   <a href="index.html" class="brand">TechStore</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="acerca.html">Acerca de</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="#" id="toggle-cart" aria-label="Carrito">Carrito (<span id="contador-carrito">0</span>)</a>
+    </nav>
+  </div>
+</header>
+ <!-- MAIN -->
+    <main>
+         <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Bienvenido a TechStore</h2>
+                <p>Encuentra las mejores computadoras, laptops y accesorios al mejor precio en Honduras</p>
+                    <a href="productos.html" class="btn-secondary">
+                        <i class="fas fa-laptop"></i> Ver Productos
+                    </a>
+                    <a href="contacto.html" class="btn-secondary">
+                        <i class="fas fa-laptop"></i> Solicitar cotización
+                    </a>
+                </div>
+            </div>
+        </section>
+<!-- Mini-modal del carrito (presente en todas las páginas) -->
+<div id="cart-modal" class="cart-modal" aria-live="polite">
+  <h3 style="margin:6px 0 10px;">Tu carrito</h3>
+  <div id="cart-body"></div>
+  <div class="cart-total">Total: <span id="cart-total">L 0</span></div>
+  <div class="cart-actions">
+    <button class="btn" id="btn-vaciar" type="button">Vaciar</button>
+    <button class="btn" id="btn-pagar" type="button">Pagar</button>
+  </div>
+</div>
+
+
+
+<!-- Scripts -->
+<script src="script.js"></script>
+  <!-- HEADER + CARRITO -->
+  <!-- (Pega aquí el bloque de header/footer mostrado arriba) -->
+
+    <section id="acerca" class="grid grid--2" style="margin-bottom:20px;">
+      <article class="card">
+        <h2>Acerca de Nosotros</h2>
+        <p>
+          Somos una empresa con amplia trayectoria en venta de
+          <strong>computadoras, piezas y periféricos</strong>.
+        </p>
+        <p>
+          <strong>Distribuimos componentes</strong> a nivel nacional e internacional y
+          contamos con programas de <strong>precios por volumen</strong>.
+        </p>
+        <a class="btn" href="acerca.html">Conócenos</a>
+      </article>
+
+      <article class="card">
+        <h3>Nuestra Misión</h3>
+        <p>Proveer tecnología confiable y soporte experto con entregas ágiles.</p>
+        <h3 style="margin-top:10px;">Nuestra Visión</h3>
+        <p>Ser la tienda líder de computación en Honduras y referente regional.</p>
+      </article>
+    </section>
+
+    <section class="grid grid--3" style="margin-bottom:20px;">
+      <article class="card"><h3>Stock Actualizado</h3><p>CPUs, RAM, SSD, GPUs y más.</p></article>
+      <article class="card"><h3>Asesoría Experta</h3><p>La mejor configuración para ti.</p></article>
+      <article class="card"><h3>Mayoristas</h3><p>Listas de precios por volumen.</p></article>
+    </section>
+
+    <section style="margin-bottom:20px;">
+      <h2>Destacados</h2>
+      <div class="grid grid--3" style="margin-top:10px;">
+        <article class="card product">
+          <img src="pc oficina esencial.png" alt="PC de oficina">
+          <h3>PC Oficina Essentials</h3>
+          <p class="price">L 18,990</p>
+          <a class="btn" href="productos.html">Ver más</a>
+        </article>
+        <article class="card product">
+          <img src="Pc Gaming rtx.png"alt="PC Gamer">
+          <h3>PC Gaming RTX</h3>
+          <p class="price">L 49,990</p>
+          <a class="btn" href="productos.html">Ver más</a>
+        </article>
+        <article class="card product">
+          <img src="ssd nvme 1tb.png" alt="SSD NVMe">
+          <h3>SSD NVMe 1TB</h3>
+          <p class="price">L 2,700</p>
+          <a class="btn" href="productos.html">Ver más</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h3>¿Cotización por volumen?</h3>
+      <p>Envíanos tu lista y te ofrecemos <strong>precios mayoristas</strong>.</p>
+      <a class="btn" href="contacto.html">Contactar ventas</a>
+    </section>
+  </main>
+
+  <!-- FOOTER + SCRIPTS -->
+  <!-- (Pega aquí el bloque de footer y script) -->
+   <div id="cart-modal" class="cart-modal" aria-live="polite">
+  ...
+</div>
+ <footer>
+        <p>&copy; 2025 TechStore — SPS, Barrio Los Andes</p>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
+
